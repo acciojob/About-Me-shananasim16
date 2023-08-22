@@ -3,91 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Profile</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        header {
-            text-align: center;
-            padding: 20px;
-            background-color: #f2f2f2;
-        }
-        h1 {
-            margin: 0;
-        }
-        .profile-picture {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin: 20px auto;
-            display: block;
-        }
-        .section {
-            margin: 30px 0;
-            padding: 20px;
-            border: 1px solid #ccc;
-            background-color: #f9f9f9;
-        }
-        .section h2 {
-            margin: 0;
-        }
-        .skills {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
-        .badge {
-            padding: 5px 10px;
-            background-color: #007bff;
-            color: #fff;
-            border-radius: 5px;
-        }
-        .progress {
-            height: 10px;
-            width: 200px;
-            background-color: #eee;
-            border-radius: 5px;
-            position: relative;
-        }
-        .progress-bar {
-            height: 100%;
-            background-color: #28a745;
-            border-radius: 5px;
-        }
-    </style>
+    <title>Your Profile</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Your Full Name</h1>
-        <p>Your Email Address</p>
+        <h1>Name</h1>
+        <p>Email: your.email@example.com</p>
     </header>
-    <img src="your-profile-picture.jpg" alt="Profile Picture" class="profile-picture">
-    <div class="section">
+    <section id="profile">
         <h2>Profile</h2>
-        <p>Profile details go here.</p>
-    </div>
-    <div class="section">
+        <p>Web Developer</p>
+    </section>
+    <section id="about-me">
         <h2>About Me</h2>
-        <p>Brief description about yourself.</p>
-    </div>
-    <div class="section">
+        <p>
+            I am a passionate web developer with a strong background in front-end and back-end technologies.
+            I love creating beautiful and functional websites that provide great user experiences.
+        </p>
+    </section>
+    <section id="skills">
         <h2>Skills</h2>
-        <div class="skills">
-            <div class="badge">Skill 1</div>
-            <div class="progress">
-                <div class="progress-bar" style="width: 80%;"></div>
+        <div class="skill">
+            <p>HTML</p>
+            <div class="bar">
+                <div class="html"></div>
             </div>
+            <span>80%</span>
         </div>
-        <div class="skills">
-            <div class="badge">Skill 2</div>
-            <div class="progress">
-                <div class="progress-bar" style="width: 60%;"></div>
+        <div class="skill">
+            <p>CSS</p>
+            <div class="bar">
+                <div class="css"></div>
             </div>
+            <span>75%</span>
         </div>
-        <!-- Add more skills here -->
-    </div>
+        <div class="skill">
+            <p>JavaScript</p>
+            <div class="bar">
+                <div class="js"></div>
+            </div>
+            <span>70%</span>
+        </div>
+        <!-- Add more skills as needed -->
+    </section>
+    <section id="profile-picture">
+        <img src="your-profile-picture.jpg" alt="Your Profile Picture">
+    </section>
 </body>
 </html>
-
